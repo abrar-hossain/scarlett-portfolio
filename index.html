@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile • Scarlett Routledge</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- top strip (optional) -->
+  <div class="topbar">
+    <div class="topbarInner">
+      <div class="social" aria-label="Social">
+        <a href="#" title="Instagram" aria-label="Instagram">ig</a>
+        <a href="#" title="TikTok" aria-label="TikTok">tt</a>
+        <a href="#" title="Facebook" aria-label="Facebook">f</a>
+        <a href="#" title="X" aria-label="X">x</a>
+      </div>
+
+      <div class="topmeta">
+        <span>🍟 McDonald’s</span>
+        <span>🎬 Movies</span>
+        <span>📚 Books</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- nav (ONE PAGE: scroll to sections) -->
+  <div class="nav">
+    <div class="navInner">
+      <div class="brand">
+        <span class="brandMark" aria-hidden="true"></span>
+        <span id="brandText">Scarlett</span>
+      </div>
+
+      <nav class="navLinks" aria-label="Primary">
+        <a class="navLink" href="#about">About</a>
+        <a class="navLink" href="#work">Work</a>
+        <a class="navLink" href="#movies">Movies</a>
+        <a class="navLink" href="#books">Books</a>
+        <a class="navLink" href="#contact">Contact</a>
+      </nav>
+
+      <div>
+        <a class="btn primary" href="#contact">Say Hi</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="heroInner">
+        <div>
+          <h1 class="heroTitle">
+            Hi, I’m <span class="accent" id="nameOut">Scarlett Routledge</span>
+          </h1>
+
+          <p class="heroP" id="bioOut">
+            I work at McDonald’s and I enjoy simple things—watching movies, reading books, and relaxing in my free time.
+          </p>
+
+          <div class="chips" id="chipsOut">
+            <div class="chip">🍟 <span>McDonald’s</span></div>
+            <div class="chip">🎬 <span>Movies</span></div>
+            <div class="chip">📚 <span>Books</span></div>
+            <div class="chip">✨ <span>Friendly &amp; reliable</span></div>
+          </div>
+
+          <div class="heroActions">
+            <a class="btn primary" href="#movies">See Movies</a>
+            <a class="btn" href="#books">See Books</a>
+            <a class="btn" href="#work">Work details</a>
+          </div>
+        </div>
+
+        <div class="heroMedia">
+          <div class="heroGlass" aria-hidden="true"></div>
+          <div class="portraitFrame">
+            <img src="assets/portrait.jpg" alt="Portrait" onerror="this.style.display='none'">
+            <div class="imgPlaceholder">
+              <div>
+                Put photo at <b>assets/portrait.jpg</b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="sectionInner">
+        <p class="sectionKicker">ABOUT</p>
+        <h2 class="sectionTitle">A little <span class="accent">about me</span></h2>
+
+        <div class="twoCol">
+          <div class="panel">
+            <h3>Personality</h3>
+            <p class="small">
+              Friendly, hardworking, and respectful. Enjoys calm moments after a busy day.
+            </p>
+            <ul class="list">
+              <li>Positive attitude</li>
+              <li>Good communication</li>
+              <li>Enjoys learning and improving</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3>Hobbies</h3>
+            <p class="small">
+              Loves watching movies and reading books—especially when there’s time to relax.
+            </p>
+            <ul class="list">
+              <li>Movie nights</li>
+              <li>Book reading</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section" id="work">
+      <div class="sectionInner">
+        <p class="sectionKicker">WORK</p>
+        <h2 class="sectionTitle">Working at <span class="accent">McDonald’s</span></h2>
+        <p class="sectionDesc">A quick look at the role and responsibilities.</p>
+
+        <div class="grid3">
+          <div class="card">
+            <h4>Role</h4>
+            <p>Crew Member / Team Member</p>
+            <div class="metaRow">
+              <span class="tag">Customer service</span>
+              <span class="tag">Teamwork</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h4>Daily responsibilities</h4>
+            <p>Taking orders, helping customers, and supporting the team during busy hours.</p>
+            <div class="metaRow">
+              <span class="tag">Fast-paced</span>
+              <span class="tag">Organized</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h4>Strengths</h4>
+            <p>Stays calm, works well with others, and tries to make customers feel welcome.</p>
+            <div class="metaRow">
+              <span class="tag">Friendly</span>
+              <span class="tag">Reliable</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOVIES -->
+    <section class="section" id="movies">
+      <div class="sectionInner">
+        <p class="sectionKicker">MOVIES</p>
+        <h2 class="sectionTitle">Favorite <span class="accent">movies</span></h2>
+        <div class="grid3" id="moviesGrid"></div>
+      </div>
+    </section>
+
+    <!-- BOOKS -->
+    <section class="section" id="books">
+      <div class="sectionInner">
+        <p class="sectionKicker">BOOKS</p>
+        <h2 class="sectionTitle">Favorite <span class="accent">books</span></h2>
+        <div class="grid3" id="booksGrid"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="sectionInner">
+        <p class="sectionKicker">CONTACT</p>
+        <h2 class="sectionTitle">Send a <span class="accent">message</span></h2>
+
+        <div class="panel contactPanel">
+          <label for="cName">Name</label>
+          <input id="cName" placeholder="Your name" />
+
+          <label for="cEmail">Email</label>
+          <input id="cEmail" type="email" placeholder="you@email.com" />
+
+          <label for="cMsg">Message</label>
+          <textarea id="cMsg" placeholder="Write something nice..."></textarea>
+
+          <div class="row">
+            <button class="btn primary" id="sendBtn" type="button">Send</button>
+            <button class="btn" id="clearBtn" type="button">Clear</button>
+          </div>
+
+          <div class="msg" id="msg"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footerGrid">
+        <div>
+          <p class="footTitle" id="footTitle">Scarlett Routledge</p>
+          <div class="footDesc">
+            A simple personal page about Scarlett Routledge — work, movies, and books.
+          </div>
+        </div>
+
+        <div>
+          <p class="footTitle">Sections</p>
+          <a class="footLink" href="#work">Work</a>
+          <a class="footLink" href="#movies">Movies</a>
+          <a class="footLink" href="#books">Books</a>
+          <a class="footLink" href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="tiny">© <span id="year"></span></div>
+    </footer>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
